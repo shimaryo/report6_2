@@ -1,10 +1,13 @@
 package jp.ac.uryukyu.ie.e175759;
 
 public class Drow {
-    int card;
+    public int card;
 
 
-    public Card(int card){
+
+    public void Card(){
+        this.card =(int)(Math.random()*10) + 1;
+
 
 
     }
