@@ -46,8 +46,29 @@ public class Main {
 
 
             }
+            if(your.playerScore>=22){
+                System.out.println("プレイヤーがバーストしたのでディーラーの勝ち");
+
+            }
+            if(dealer.playerScore>=22){
+                System.out.println("ディーラーがバーストしたのでプレーヤーの勝ち");
+            }
+            if(21 - Math.abs(your.playerScore)>21 - Math.abs(dealer.playerScore)) {
+                System.out.println("プレイヤーが" + your.playerScore + "," + "ディーラーが" + dealer.playerScore + "なのでディーラーの勝ち");
+            }
+            if(21- Math.abs(your.playerScore)==21-Math.abs(dealer.playerScore)){
+            System.out.println("プレイヤーが" + your.playerScore + "," + "ディーラーが" + dealer.playerScore + "なのでドロー");
+            }
+        if(21-Math.abs(your.playerScore)<21-Math.abs(dealer.playerScore)) {
+            System.out.println("プレイヤーが" + your.playerScore + "," + "ディーラーが" + dealer.playerScore + "なのでプレイヤーの勝ち");
         }
     }
+
+
+
+    }
+
+
 
 
 
