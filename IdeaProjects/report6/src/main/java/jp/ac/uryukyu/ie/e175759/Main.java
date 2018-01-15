@@ -14,6 +14,8 @@ public class Main {
         your.playerScore = your.playerScore + your.card;
         dealer.playerScore = dealer.playerScore + dealer.card;
 
+        //ここではカードを引いたり終了したりしている
+        //これからはプレイヤーがさらに引いた時のfor文
         for (int i = 0; your.playerScore < 22; i++) {
 
             System.out.println("現在の合計は" + your.playerScore + "です。");
@@ -32,6 +34,7 @@ public class Main {
 
                 break;
             }
+            //ここからはプレイヤーが引かないでディーラーが引く時
 
             if (input.equals("stn") == true) break;
         }
@@ -46,6 +49,8 @@ public class Main {
 
 
             }
+
+            //ここから下で勝敗をつけているできれば違うクラスを作って実装したかった。
             if(your.playerScore>=22){
                 System.out.println("プレイヤーがバーストしたのでディーラーの勝ち");
 
