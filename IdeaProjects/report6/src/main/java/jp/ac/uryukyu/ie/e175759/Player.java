@@ -7,7 +7,7 @@ public class Player {
 
 
     public void Card(){
-        this.card =(int)(Math.random()*11) + 1;
+        this.card =(int)(Math.random()*10) + 1;
 
 
 
